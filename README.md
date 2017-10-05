@@ -12,7 +12,7 @@ It also requires that [Graphviz](http://www.graphviz.org/ "Graphviz") be install
 
 ## Inputs
 
-This script expects an file "services.xlsx" with the following columns:
+This script expects a `services.xlsx` file with the following columns:
 * **Service** - the name of the service
 * **Service Type** - Whether the service is 'Business Facing' or 'IT Supporting'
 * **Service Dependencies** - a semicolon separate list of services that this service depends on
@@ -22,11 +22,11 @@ This script expects an file "services.xlsx" with the following columns:
 
 This script will output two files
 
-*graphviz.txt*
+*`graphviz.txt`*
 
 This is a text file that contains Dot language for drawing a digraph of the services.
 
-*service_costs.xlsx*
+*`service_costs.xlsx`*
 
 This xlsx files contains a tab for all services that displays their base costs, prececcessor costs and successor costs.  Success costs are calculated at a flat percentage at first but can be tweaked after.
 
