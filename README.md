@@ -15,7 +15,7 @@ It also requires that [Graphviz](http://www.graphviz.org/ "Graphviz") be install
 This script expects a `services.xlsx` file with the following columns:
 * **Service** - the name of the service
 * **Service Type** - Whether the service is 'Business Facing' or 'IT Supporting'
-* **Service Dependencies** - a semicolon separate list of services that this service depends on
+* **Service Dependencies** - a semicolon separated list of services that this service depends on
 * **Cost** - A number representing the cost of the service
 
 ## Outputs
