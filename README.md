@@ -20,7 +20,7 @@ This script expects a `services.xlsx` file with the following columns:
 
 ## Outputs
 
-This script will output two files
+This script will output two files:
 
 `service_costs.xlsx`
 
