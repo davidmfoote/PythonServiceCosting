@@ -1,5 +1,5 @@
 # PythonServiceCosting
-This is a simple Python 3 script for consuming a list of Services, their dependencies, and their costs and exporting an xlsx file.
+This is a simple Python 3 script for consuming a list of Services, their types, their dependencies, and their costs and exporting an xlsx file.
 
 ## Requirements
 This script requires the following modules:
@@ -14,6 +14,7 @@ It also requires that [Graphviz](http://www.graphviz.org/ "Graphviz") be install
 
 This script expects an file "services.xlsx" with the following columns:
 * **Service** - the name of the service
+* **Service Type** - Whether the service is 'Business Facing' or 'IT Supporting'
 * **Service Dependencies** - a semicolon separate list of services that this service depends on
 * **Cost** - A number representing the cost of the service
 
