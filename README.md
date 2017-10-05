@@ -1,5 +1,5 @@
 # PythonServiceCosting
-This is a simple Python 3 script for consuming a list of Services, their types, their dependencies, and their costs and exporting an xlsx file.
+This is a simple Python 3 script for consuming a list of Services, their types, their dependencies, and their costs and exporting an xlsx file that calculates total cost for each service plus the cost from predecessor services and to successor services.
 
 ## Requirements
 This script requires the following modules:
@@ -22,12 +22,12 @@ This script expects a `services.xlsx` file with the following columns:
 
 This script will output two files
 
-*`graphviz.txt`*
+`graphviz.txt`
 
 This is a text file that contains Dot language for drawing a digraph of the services.
 
-*`service_costs.xlsx`*
+`service_costs.xlsx`
 
-This xlsx files contains a tab for all services that displays their base costs, prececcessor costs and successor costs.  Success costs are calculated at a flat percentage at first but can be tweaked after.
+This xlsx files contains a tab for all services that displays their base costs, predecessor costs and successor costs.  Successor costs are calculated at a flat percentage at first but can be tweaked after.
 
 Due to the possiblity of circular relationships among the services, iterative formulas may need to be enabled.  To do this go to File -> Options -> Forumlas and check "Enable iterative formulas"
